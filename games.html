@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Browse Video Games</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #9d00ff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .games-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .add-to-cart:hover {
+            background-color: green;
+        }
+    
+        .add-to-cart {
+            transition: background-color 0.3s ease;
+        }
+    
+        .game {
+    width: 48%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center; /* Center the text inside the game box */
+}
+
+    
+.game img {
+    display: block;
+    margin: 0 auto 10px auto; /* Center the image and add space below */
+    max-width: 100%;
+    transform: scale(1); /* Initial scale */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+    
+        .game img:hover {
+            transform: scale(1.1); /* Scale up image when hovered */
+        }
+    
+        .button {
+            transition: background-color 0.3s ease;
+        }
+    
+        .button:hover {
+            background-color: green;
+        }
+
+
+    .backtohomeimage img {
+        transform: scale(1); /* Initial scale */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+    }
+
+    .backtohomeimage:hover img {
+        transform: scale(1.1); /* Scale up image when hovered */
+    }
+</style>
+    
+</head>
+<body>
+    <header>
+
+        <a class="backtohomeimage" href="index.html">
+            <img src="DALL·E 2024-04-17 15.26.13 - Create a logo for 'Gaming Galaxy' with the name in a bold, modern sans-serif font. Style the 'G' of 'Gaming' and the 'G' of 'Galaxy' with a purple col.webp" width="200">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="cartpage.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="games-container">
+            <div class="game">
+                <img src="pictures/crafting.jpeg" width="200">
+                <h2>Crafting</h2>
+                <p>$39.99 AUD</p>
+                <p>Welcome to Crafting, a vibrant sandbox survival game where creativity knows no bounds! Set in a vast, procedurally generated world filled with endless opportunities, players are free to explore, gather resources, and build their own unique creations. From towering castles to intricate underground bases, the only limit is your imagination. Gather up your resources and try your best to defeat the Giant…</p>
+                <button class="add-to-cart" data-name="Crafting" data-price="39.99">Add to Cart</button>
+            </div>
+            <div class="game">
+                <img src="pictures/The one ring.jpeg" width="200">
+                <h2>The One Ring</h2>
+                <p>$89.99 AUD</p>
+                <p>The One Ring is an epic action RPG set in a dark, expansive fantasy world where ancient powers clash and secrets lurk in every shadow. Inspired by the mythos of dark fantasy of real world myths, players are thrust into a perilous journey across a land on the brink of ruin. Wield the power of the legendary One Ring!</p>
+                <button class="add-to-cart" data-name="The One Ring" data-price="89.99">Add to Cart</button>
+            </div>
+            <div class="game">
+                <img src="pictures/western shooter.jpeg" width="200">
+                <h2>Western Shooter</h2>
+                <p>$29.99 AUD</p>
+                <p>Western Shooter is an immersive action-adventure game set in the rugged and lawless frontier of the American Wild West. This game puts you in the boots of a gunslinger navigating a world of outlaws, sheriffs, and untamed wilderness. With a gripping storyline, realistic gunplay, and a world teeming with life, Western Shooter offers an unforgettable journey through the heart of the Old Wild West.</p>
+                <button class="add-to-cart" data-name="Western Shooter" data-price="29.99">Add to Cart</button>
+            </div>
+            <div class="game">
+                <img src="pictures/slay them all.jpeg" width="200">
+                <h2>Slay Them All</h2>
+                <p>$79.99 AUD</p>
+                <p>Slay Them All is a relentless first-person shooter that plunges you into a brutal and chaotic world overrun by nightmarish creatures. This game challenges you to obliterate hordes of demonic enemies with an arsenal of devastating weapons. As the last hope against an unholy invasion, you must slay them all—no mercy, no hesitation.</p>
+                <button class="add-to-cart" data-name="Slay Them All" data-price="79.99">Add to Cart</button>
+            </div>
+            <div class="game">
+                <img src="pictures/Prestirke.jpeg" width="200">
+                <h2>Prestrike</h2>
+                <p>$19.99 AUD</p>
+                <p>Prestrike is a high-stakes, tactical first-person shooter that puts you in the heart of intense, team-based combat. Prestrike challenges players to outthink, outshoot, and outmaneuver their opponents in fast-paced matches where every decision counts. Whether you're planting the bomb or defusing it, success hinges on strategy, precision, and teamwork.</p>
+                <button class="add-to-cart" data-name="Prestrike" data-price="19.99">Add to Cart</button>
+            </div>
+            <div class="game">
+                <img src="pictures/uplifted order.jpeg" width="200">
+                <h2>Uplifted Order</h2>
+                <p>$79.99 AUD</p>
+                <p>Uplifted Order is a thrilling action-adventure game set in a distant galaxy where ancient civilizations, mysterious forces, and a crumbling order collide. Uplifted Order places you in the role of a young warrior who discovers a hidden power within, destined to challenge the remnants of a fallen empire. As you uncover the secrets of a lost era, you must master your abilities, forge alliances, and confront a shadowy enemy determined to extinguish all hope.</p>
+                <button class="add-to-cart" data-name="Uplifted Order" data-price="79.99">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="cart-functions.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    addToCart(name, price);
+                });
+            });
+        });
+    </script>
+    
+    <script src="cart-functions.js"></script>
+    <footer>
+        © 2024 Gaming Galaxy. All rights reserved.
+    </footer>
+</body>
+</html>
+

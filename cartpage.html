@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Browse Video Games</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #9d00ff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .checkoutbutton {
+            width: 200px;
+            height: 50px;
+            color: green;
+            transition: background-color 0.3s ease;
+        
+        }
+
+        .checkoutbutton:hover {
+    background-color: green;
+}
+
+.backtohomeimage img {
+        transform: scale(1); /* Initial scale */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+    }
+
+    .backtohomeimage:hover img {
+        transform: scale(1.1); /* Scale up image when hovered */
+    }
+</style>
+    
+</head>
+<body>
+    <header>
+
+        <a class="backtohomeimage" href="index.html">
+            <img src="DALL·E 2024-04-17 15.26.13 - Create a logo for 'Gaming Galaxy' with the name in a bold, modern sans-serif font. Style the 'G' of 'Gaming' and the 'G' of 'Galaxy' with a purple col.webp" width="200">
+        </a>
+        <nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="cartpage.html">Cart</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Shopping Cart</h2>
+<h3 id="total-price">Your total price comes to....</h3>
+<div id="cart-items"></div>
+
+    </main>
+    <script src="cart-functions.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', displayCart);
+    </script>
+    <script src="cart-functions.js"></script>
+<button class="checkoutbutton">
+    <a href="checkoutpage.html">Checkout</a></button>
+    <footer>
+        © 2024 Gaming Galaxy. All rights reserved.
+    </footer>
+</body>
+</html>

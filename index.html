@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Video Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #9d00ff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .carousel {
+        width: 100%;
+        overflow: hidden; /* Ensures that the scaling does not cause overflow */
+    }
+    .carousel-container {
+        display: flex;
+        transition: transform 1s ease; /* For sliding transitions in the carousel */
+        text-align: center;
+    }
+    .carousel-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .carousel-item img {
+        transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+        transform: scale(1); /* Initial scale */
+    }
+    .carousel-item img:hover {
+        transform: scale(1.1); /* Scale up when hovered */
+    }
+        .benefits-container {
+    display: flex;
+    align-items: center;
+}
+
+.benefits-image {
+    width: 400px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.benefits-text {
+    flex: 1;
+}
+
+.why-shop-container {
+    display: flex;
+    align-items: center;
+}
+
+.why-shop-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.why-shop-image img {
+    width: 400px; /* Adjust size as needed */
+}
+
+/* Add this to your style.css file */
+
+.care-container {
+    display: flex;
+    align-items: center;
+}
+
+.care-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.care-image img {
+    max-width: 100%;
+    width: 400px; /* Adjust size as needed */
+}
+
+.footer {
+        background-color: #ff0000; 
+        color: #333; 
+        text-align: center; 
+        padding: 20px 0; 
+    }
+
+h2 {text-align: center;
+}
+
+h1 {text-align: center;
+}
+
+.backtohomeimage img {
+        transform: scale(1); /* Initial scale */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+    }
+
+    .backtohomeimage:hover img {
+        transform: scale(1.1); /* Scale up image when hovered */
+    }
+</style>
+    
+</head>
+<body>
+    <header>
+
+        <a class="backtohomeimage" href="index.html">
+            <img src="DALL·E 2024-04-17 15.26.13 - Create a logo for 'Gaming Galaxy' with the name in a bold, modern sans-serif font. Style the 'G' of 'Gaming' and the 'G' of 'Galaxy' with a purple col.webp" width="200">
+        </a>
+        <link rel="icon" href="pictures/android-chrome-192x192.png" type="image/x-icon">
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="cartpage.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Our goal - "to bring another galaxy to you"</h1>
+    <h2>Featured</h2>
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <button> 
+                   <a href="games.html"> <img src="/Users/jacobpalamara/Desktop/school assmennt/pictures/crafting.jpeg" alt="Image 1" width="500">
+                   </a> </button>
+                </div>
+                <div class="carousel-item">
+                    <button> 
+                    <a href="games.html"><img src="/Users/jacobpalamara/Desktop/school assmennt/pictures/The one ring.jpeg" alt="Image 2" width="500">
+                    </a></button>
+                </div>
+                <div class="carousel-item">
+                    <button> 
+                        <a href="games.html"><img src="/Users/jacobpalamara/Desktop/school assmennt/pictures/uplifted order.jpeg" alt="Image 3" width="500">
+                        </a></button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="why-shop">
+            <h2>Why Shop at Galaxy Gaming?</h2>
+            <div class="why-shop-container">
+                <div class="why-shop-text">
+                    <p>At Galaxy Gaming, we strive to provide the best gaming experience for our customers. Here are some reasons why you should shop with us:</p>
+                    <ul>
+                        <li>Wide Selection: We offer a diverse range of video games from various genres and platforms, ensuring there's something for everyone.</li>
+                        <li>Competitive Prices: Enjoy competitive prices on all our products, allowing you to get the games you love at affordable prices.</li>
+                        <li>Excellent Customer Service: Our dedicated team is committed to providing exceptional customer service, ensuring a smooth shopping experience from start to finish.</li>
+                        <li>Quality Assurance: We carefully select our products to ensure they meet our quality standards, so you can shop with confidence.</li>
+                    </ul>
+                </div>
+                <div class="why-shop-image">
+                    <img src="shopping local.png" alt="Shopping Local">
+                </div>
+            </div>
+        </section>
+        <section id="benefits">
+            <h2>Benefits of at Galaxy Gaming</h2>
+            <div class="benefits-container">
+                <img src="loyalty card.webp" alt="Loyalty Card" class="benefits-image">
+                <div class="benefits-text">
+                    <p>Shopping at Galaxy Gaming comes with several benefits:</p>
+                    <ul>
+                        <li>Exclusive Deals: Enjoy exclusive deals and discounts available only to our loyal customers.</li>
+                        <li>Reward Programs: Take advantage of our reward programs to earn points on every purchase, which you can redeem for discounts or freebies.</li>
+                        <li>Fast Shipping: We offer fast and reliable shipping options, ensuring you receive your order promptly.</li>
+                        <li>Easy Returns: If you're not satisfied with your purchase, we offer hassle-free returns and exchanges to ensure your complete satisfaction.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="care">
+            <h2>Our Commitment to Customer Care</h2>
+            <div class="care-container">
+                <div class="care-text">
+                    <p>At Galaxy Gaming, we value each and every customer, and we're dedicated to providing the highest level of care and attention to your needs. Here's how we go above and beyond for our customers:</p>
+                    <ul>
+                        <li>Personalized Assistance: Our knowledgeable staff is here to assist you with any questions or concerns you may have, providing personalized recommendations tailored to your preferences.</li>
+                        <li>Secure Transactions: We prioritize the security of your transactions, ensuring that your personal and payment information is always protected.</li>
+                        <li>Community Engagement: We actively engage with our gaming community through events, forums, and social media, fostering a sense of belonging and camaraderie among fellow gamers.</li>
+                        <li>Continuous Improvement: We continuously strive to improve our services and offerings based on your feedback, ensuring that we meet and exceed your expectations.</li>
+                    </ul>
+                </div>
+                <div class="care-image">
+                    <img src="customer-commitment.jpeg" alt="Customer Commitment">
+                </div>
+            </div>
+        </section>
+        <h2>Ready to shop now?
+        <button>
+            <a href="games.html">Click Here</a>
+        </button>
+    </h2>
+    </main>
+   
+    <footer>
+        © 2024 Galaxy Gaming. All rights reserved.
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.querySelectorAll('.carousel-item');
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = 'block';  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
